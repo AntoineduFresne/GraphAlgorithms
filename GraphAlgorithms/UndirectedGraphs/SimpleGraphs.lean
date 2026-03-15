@@ -15,7 +15,7 @@ structure SimpleGraph (α : Type*) where
   vertexSet : Finset α
   edgeSet   : Finset (Edge α)
   incidence : ∀ e ∈ edgeSet, ∀ v ∈ e, v ∈ vertexSet
-  loopless :  ∀ e ∈ edgeSet, ¬ e.IsDiag
+  loopless  :  ∀ e ∈ edgeSet, ¬ e.IsDiag
 
 open Finset
 
